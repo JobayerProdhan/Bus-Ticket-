@@ -26,22 +26,46 @@
 
     <!-- HEADER SECTION -->
     <header class="w-[80%] mx-auto">
-        <nav class="flex  justify-between items-center my-5">
-            <h1 class="font-bold text-[25px]">JS Travels </h1>
-            <div class="">
-                <ul class="flex  gap-10 items-center">
-                    <a href="">Home</a>
-                    <a href="">About</a>
-                    <a href="">Distination</a>
-                    <a href="">Destination</a>
-                    <a href="">Search</a>
+        <nav class="flex justify-between items-center my-5">
+            <h1 class="font-bold text-[25px]">JS Travels</h1>
+    
+            <!-- Navigation Links (Hidden on mobile) -->
+            <div class="hidden md:block">
+                <ul class="flex gap-10 items-center">
+                    <a href="#">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Distination</a>
+                    <a href="#">Destination</a>
+                    <a href="#">Search</a>
                 </ul>
             </div>
-            <div>
-                <button class="btn text-[#1DD100] bg-[#1DD100]/10 border-[#1DD100] ">Bus <i class="fa-solid fa-bus-simple"></i></button>
+    
+            <!-- Hamburger Icon for Mobile -->
+            <div class="navbar-end sm:hidden flex items-center">
+                <div class="dropdown">
+                    <label tabindex="0" class="btn btn-ghost">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </label>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content rounded-box z-[1] mt-3 w-52 p-2 shadow bg-white">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Distination</a></li>
+                        <li><a href="#">Destination</a></li>
+                        <li><a href="#">Search</a></li>
+                    </ul>
+                </div>
+            </div>
+    
+            <!-- Button (Hidden on mobile) -->
+            <div class="hidden md:block">
+                <button class="btn text-[#1DD100] bg-[#1DD100]/10 border-[#1DD100]">Bus <i class="fa-solid fa-bus-simple"></i></button>
             </div>
         </nav>
     </header>
+    
+    
 
 
 
@@ -49,39 +73,42 @@
 
 
         <!-- BANNER SECTION -->
-         <div class="mx-auto rounded-3xl bg-[url('/assets/images/banner.png')] bg-cover bg-center h-[650px] w-[80%] ">
-            <div class="justify-center items-center align-middle text-center pt-[200px] h-full ">
-                <h1 class="text-white raleway-normal font-extrabold text-[64px]">End-to-End Travel with <br> <span class="text-[#1DD100] raleway-normal font-extrabold text-[64px]">JS Paribahan</span></h1>
-                <p class="text-[white] m-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore, obcaecati!</p>
-                <button class="btn bg-[#1DD100] border-none">Buy Tickets</button>
+        <div class="mx-auto rounded-3xl bg-[url('/assets/images/banner.png')] bg-cover bg-center h-[650px] sm:h-[500px] md:h-[600px] w-[80%] sm:w-[90%]">
+            <div class="justify-center items-center align-middle text-center pt-[200px] sm:pt-[150px] md:pt-[180px] h-full">
+                <h1 class="text-white raleway-normal font-extrabold text-[48px] sm:text-[32px] md:text-[56px]">
+                    End-to-End Travel with <br> 
+                    <span class="text-[#1DD100] raleway-normal font-extrabold text-[48px] sm:text-[32px] md:text-[56px]">JS Paribahan</span>
+                </h1>
+                <p class="text-white m-3 text-[16px] sm:text-[12px] md:text-[18px]">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore, obcaecati!</p>
+                <button class="btn bg-[#1DD100] border-none text-white px-6 py-3 text-[18px] sm:px-4 sm:py-2 sm:text-[14px]">Buy Tickets</button>
             </div>
-         </div>
+        </div>
+        
+        
+        
 
          <!-- CARD SECTION -->
-          <section>
-            <div class="flex gap-20 w-[50%] mx-auto">
-
-
+         <section>
+            <div class="flex flex-wrap gap-10 justify-center w-[90%] mx-auto">
+                <!-- First Card -->
                 <div class="flex items-center w-[358px] h-[138px] bg-white rounded-md border-b-[3px] border-[#1DD100] relative mt-[-60px] justify-center gap-4">
-                    
-                     <img src="Assets/images/people.png" alt="">
-                    
+                    <img src="Assets/images/people.png" alt="">
                     <div>
                         <h2 class="text-[36px] font-bold">500k+</h2>
                         <p>Registered users</p>
                     </div>
                 </div>
-
-
-
-                <div class="flex items-center w-[358px] h-[138px] bg-white rounded-md border-b-[3px] border-[#1DD100] relative mt-[-60px] justify-center gap-4 ">
+        
+                <!-- Second Card -->
+                <div class="flex items-center w-[358px] h-[138px] bg-white rounded-md border-b-[3px] border-[#1DD100] relative mt-[-60px] justify-center gap-4">
                     <img src="Assets/images/ticket-cupon.png" alt="">
                     <div>
                         <h2 class="text-[36px] font-bold">1.7 lacks</h2>
                         <p>Tickets sold</p>
                     </div>
                 </div>
-
+        
+                <!-- Third Card -->
                 <div class="flex items-center w-[358px] h-[138px] bg-white rounded-md border-b-[3px] border-[#1DD100] relative mt-[-60px] justify-center gap-4">
                     <img src="Assets/images/stoppage.png" alt="">
                     <div>
@@ -89,13 +116,12 @@
                         <p>Rental partners</p>
                     </div>
                 </div>
-
-                
             </div>
-          </section>
+        </section>
+        
 
           <!-- OFFERS SECTION  -->
-           <section class="w-[80%] my-[200px] mx-auto flex gap-5">
+           <section class="w-[80%] my-[200px] mx-auto lg:flex  gap-5">
 
 
 
@@ -111,7 +137,7 @@
 
 
 
-            <div class="bg-[#FFBF0F] flex justify-around gap-4 rounded-3xl items-center mx-auto w-full  ">
+            <div class="bg-[#FFBF0F] flex justify-around gap-4 rounded-3xl items-center mx-auto w-full  sm:mb-[30px]">
                 <div class="">
                    <div class="px-5">
                     <h3 class="font-bold text-[40px]">15% OFF</h3>
@@ -119,7 +145,7 @@
                     <p>use by January 2024</p>
                    </div>
                 </div>
-                <div class="p-[0px]">
+                <div class="p-[0px] lg:block sm:hidden">
                     <img src="Assets/images/cupon-devider.png" alt="">
                 </div>
                 <div class="p-7">
@@ -144,23 +170,33 @@
 
 
 
-
-            <div class="bg-[#F78C9C] flex justify-around gap-4 rounded-3xl items-center w-full">
+            <div class="bg-[#F78C9C] flex justify-around gap-4 rounded-3xl items-center mx-auto w-full  sm:mb-[30px]">
                 <div class="">
                    <div class="px-5">
                     <h3 class="font-bold text-[40px]">15% OFF</h3>
-                    <P>on your next puchase</P>
+                    <P class="font-bold ">on your next puchase</P>
                     <p>use by January 2024</p>
                    </div>
                 </div>
-                <div>
+                <div class="p-[0px] lg:block sm:hidden">
                     <img src="Assets/images/cupon-devider.png" alt="">
                 </div>
-                <div class="p-6">
-                    <h3 class="font-bold text-[32px]">NEW15</h3>
+                <div class="p-7">
+                    <h3 class="raleway-normal font-bold text-[32px]">NEW15</h3>
                     <P>Coupon code</P>
                 </div>
             </div>
+
+
+
+
+
+
+
+
+
+
+
 
             
            </section>

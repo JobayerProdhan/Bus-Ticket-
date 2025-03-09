@@ -2,7 +2,17 @@
     font-family: "Poppins", sans-serif;
   }
 
-
-.raleway-normal{
+ .raleway-normal{
     font-family: "Raleway", sans-serif;
- }
+ } 
+
+
+
+#mobile-menu {
+  display: none;
+}
+
+/* Show the mobile menu when hovering over the hamburger icon */
+.group:hover #mobile-menu {
+  display: flex;
+}
