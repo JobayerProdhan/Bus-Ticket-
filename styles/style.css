@@ -8,11 +8,8 @@
 
 
 
-#mobile-menu {
-  display: none;
-}
 
-/* Show the mobile menu when hovering over the hamburger icon */
-.group:hover #mobile-menu {
-  display: flex;
+
+#banner-container {
+  background-image: url('/Assets/images/banner.png');
 }
